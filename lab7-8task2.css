@@ -1,0 +1,498 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(4, 4, 92)
+}
+
+.button{
+    height: 30px;
+    padding-top: 5px;
+}
+
+
+
+@media screen and ((min-width: 730px) and (max-width: 1200px)){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 1000px;
+        height: 1100px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .Symbol{
+        color: red;
+        font-weight: 800;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+    .calories,
+    hr{
+        display: none;
+    }
+
+    .cake, 
+    .roll, 
+    .pie{
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 300px;
+        height: 265px;
+        background-color: rgb(248, 248, 248);
+    }
+    
+    .cake:hover,
+    .roll:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+
+    .cakes{
+        width: 1000px;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(3, 345px);
+        grid-template-rows: repeat(3, 305px);
+        position: absolute;
+        top: 180px;
+    }
+    
+    .type{
+        margin-left: 25px;
+        margin-top: 210px;
+        margin-bottom: 180px;
+    }
+    
+    .contacts{
+        display: inline-block;
+        width: 970px;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        position: absolute;
+        top: 1080px;
+    }
+
+    .company{
+        position: absolute;
+        left: 780px;
+        top: 0px;
+    }
+
+    .email{
+        color:dodgerblue;
+        position: absolute;
+        top: 30px;
+    }
+    
+    .email::before{
+        content: '\2709';
+    }
+
+    .email:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        width: 900px;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    
+    .sidebar > nav{
+        display: none;
+    }
+
+    .button{
+        background-color: rgb(230, 230, 230);
+        font-size: larger;
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 200px;
+    }
+    
+    .button:hover{
+        background-color: rgb(199, 199, 199);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .roll,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #roll:checked ~ .main > .cakes > .cake,
+    #roll:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .roll,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+
+    #roll:checked ~ .main > .cakes,
+    #pie:checked ~ .main > .cakes{
+        height: 600px;
+    }
+
+    #roll:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 470px;
+    }
+
+    #cake:checked ~ .main > .cakes,
+    #cake:checked ~ .main > .cakes{
+        height: 1040px;
+    }
+
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 780px;
+    }
+
+    #roll:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 500px;
+    }
+
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 820px;
+    }
+}
+
+
+
+
+
+@media screen and ((min-width: 320px) and (max-width: 730px)){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 670px;
+        height: 2175px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .Symbol{
+        color: red;
+        font-weight: 800;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+    .cake, 
+    .roll, 
+    .pie{
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px;
+        margin-left: 200px;
+        background-color: rgb(248, 248, 248);
+    }
+
+    .cake > p,
+    .roll > p,
+    .pie > p,
+    hr{
+        display: none;
+    }
+    
+    .cake:hover,
+    .roll:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    
+    .cakes{
+        width: 710px;
+        height: 1845px;
+        display: grid;
+        margin: 0px 0px 10px 25px;
+        grid-template-columns: 200px;
+        grid-template-rows: 200px;
+        column-gap: 5px;
+        position: absolute;
+        top: 280px;
+    }
+    .contacts{
+        position: absolute;
+        top: 2140px;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .email{
+        color:dodgerblue;
+        position: absolute;
+        top: 20px;
+    }
+    .company{
+        position: absolute;
+        top: 50px;
+    }
+    
+    .email::before{
+        content: '\2709';
+    }
+
+    .email:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 200px;
+        border: none;
+        width: 320px;
+        height: 160px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .sidebar > nav{
+        display: none;
+    }
+    
+    .button{
+        background-color: rgb(230, 230, 230);
+        font-size: larger;
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+        margin-bottom: 15px;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    
+    .button:hover{
+        background-color: rgb(199, 199, 199);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .roll,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #roll:checked ~ .main > .cakes > .cake,
+    #roll:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .roll,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+    
+    #roll:checked ~ .main > .cakes,
+    #pie:checked ~ .main > .cakes{
+        height: 600px;
+    }
+
+    #roll:checked ~ .main > .contacts,
+    #pie:checked ~ .main > .contacts{
+        top: 700px;
+    }
+
+    #cake:checked ~ .main > .cakes,
+    #cake:checked ~ .main > .cakes{
+        height: 1040px;
+    }
+
+    #cake:checked ~ .main > .contacts,
+    #cake:checked ~ .main > .contacts{
+        top: 1330px;
+    }
+
+    #roll:checked ~ .main,
+    #pie:checked ~ .main{
+        height: 750px;
+    }
+
+    #cake:checked ~ .main,
+    #cake:checked ~ .main{
+        height: 1370px;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px){
+    .main{
+        border: 2px solid darkgrey;
+        padding: 15px;
+        width: 1700px;
+        height: 1060px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    h3{
+        margin-top: 5px;
+    }
+    
+    .Symbol{
+        color: red;
+        font-weight: 800;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    
+    .cake, 
+    .roll, 
+    .pie{
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 385px;
+        height: 290px;
+        background-color: rgb(248, 248, 248);
+    }
+    
+    .cake:hover,
+    .roll:hover,
+    .pie:hover{
+        box-shadow: 5px 5px 5px rgb(83, 83, 83);
+    }
+    
+    
+    img{
+        width: 200px;
+        max-height: 200px;
+        float: left;
+        margin-right: 20px;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    
+    .cakes{
+        width: 1220px;
+        height: 920px;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: repeat(3, 305px);
+        grid-auto-flow: inherit;
+        padding: inherit;
+    }
+    
+    .type{
+        margin-bottom: 180px;
+    }
+    
+    .calories{
+        margin-left: 25px;
+    }
+    
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+        font-size: 25px;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .email{
+        color:dodgerblue;
+        margin-right: 1200px;
+    }
+    
+    .email:hover{
+        text-decoration: underline;
+    }
+    
+    .sidebar{
+        position: absolute;
+        top: 125px;
+        left: 1300px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 400px;
+        height: 902px;
+        background-color: rgb(248, 248, 248);
+        text-align: center;
+    }
+    
+    .button{
+        background-color: rgb(230, 230, 230);
+        font-size: larger;
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 5px;
+        margin-bottom: 15px;
+        margin-left: 100px;
+        width: 200px;
+    }
+    
+    .button:hover{
+        background-color: rgb(199, 199, 199);
+    }
+    
+    input[type="radio"]{
+        display: none;
+    }
+    
+    #cake:checked ~ .main > .cakes > .roll,
+    #cake:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #roll:checked ~ .main > .cakes > .cake,
+    #roll:checked ~ .main > .cakes > .pie{
+        display: none;
+    }
+    
+    #pie:checked ~ .main > .cakes > .roll,
+    #pie:checked ~ .main > .cakes > .cake{
+        display: none;
+    }
+}
